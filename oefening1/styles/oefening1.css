@@ -5,36 +5,48 @@
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
   /* regular / 400 */
-
+  font-family:expletus;
+  src: url(../fonts/ExpletusSans-Regular.ttf);
+  font-weight: 400;
 }
+
+
 
 @font-face {
   /* bold / 700 */
-
+  font-family:expletus;
+  src: url(../fonts/ExpletusSans-Bold.ttf);
+  font-weight: 700;
 }
 
 
 li:first-of-type {
   padding:1em;
   overflow:auto;
+
+  font-family: expletus;
 }
 
 li:first-of-type h2 {
   /* JOUW CODE HIER */
   
+  font-size: 2em;
 
 }
 
 li:first-of-type p {
   /* JOUW CODE HIER */
-  
+  /* font-family: expletus; */
+  line-height: 1.2em;
 
 }
 
 /* hiermee selecteer je de eerste letter van de p in het eerste blokje */
 li:first-of-type p::first-letter {
   /* JOUW CODE HIER */
-
+  /* font-family: expletus; */
+  font-weight: bold;
+  font-size: 2em;
   
 }
 
@@ -48,7 +60,9 @@ li:first-of-type p::first-letter {
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  
+  font-family: montse;
+  src: url(../fonts/Montserrat-Thin.ttf);
+  font-weight: 100;
 }
 
 
@@ -74,8 +88,13 @@ li:nth-of-type(2) h2 {
   color:var(--color);
 
   /* JOUW CODE HIER */
-
-  
+  font-family: montse;
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 1.0em;
+  text-transform: uppercase;
+  color: var(--color);
+  text-shadow: 0 0 0.25em var(--shadow);
 }
 
 
@@ -88,7 +107,9 @@ li:nth-of-type(2) h2 {
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  
+  font-family: saira;
+  src: url(../fonts/Saira_Condensed-Bold.ttf);
+  font-weight: 700;
 }
 
 li:nth-of-type(3) {
@@ -98,12 +119,23 @@ li:nth-of-type(3) {
   --shadow:rgb(0 0 0 / .75);
 
   /* JOUW CODE HIER */
-  
+  background-color: var(--background);
+  display: grid;
+  grid-auto-columns:min-content;
+  place-content:center;
+  text-align: center;
 
 }
 
 li:nth-of-type(3) h2 {
   /* JOUW CODE HIER */
-
-  
+  font-family: saira;
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: var(--color);
+  text-shadow: 5px 5px var(--shadow);
+  letter-spacing: .2em;
+  transform:skewY(-5deg)
 }

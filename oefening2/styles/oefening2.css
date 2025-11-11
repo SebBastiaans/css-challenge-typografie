@@ -1,7 +1,28 @@
 /*******************************/
 /* CODE VOOR HET EERSTE BLOKJE */
 /*******************************/
+@font-face {
+    font-family: han;
+    src: url(../fonts/BlackHan.ttf);
+    font-weight: 700;
+}
 
+li:first-of-type {
+    display:grid;
+    grid-auto-columns:min-content;  
+    place-content:center;
+    text-align:center;
+    background-color: gray;
+}
+
+li:first-of-type h2{
+    font-family: han;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: gray;
+    text-shadow: 4px 4px 10px rgb(51, 51, 51);
+}
 
 
 
@@ -17,9 +38,21 @@
 /******************************/
 /* CODE VOOR HET DERDE BLOKJE */
 /******************************/
+@font-face {
+    font-family: ubuntu;
+    src: url(../fonts/Ubuntu-Light.ttf);
+    font-weight: 300;
+}
 
+@font-face {
+    font-family: ubuntu;
+    src: url(../fonts/Ubuntu-Bold.ttf);
+    font-weight: 700;
+}
 
-
+li:first-of-type {
+    
+}
 
 
 /******************************/
