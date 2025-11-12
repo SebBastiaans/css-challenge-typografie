@@ -51,10 +51,20 @@ li:first-of-type h2{
 }
 
 li:first-of-type {
-    
+    display:grid;
+    grid-auto-columns:min-content;  
+    place-content:center;
+    text-align:center;
 }
 
+li:nth-of-type(2) h2{
+    text-transform: uppercase;
 
+}
+
+li:nth-of-type(2) p{
+    text-transform: uppercase;
+}
 /******************************/
 /* CODE VOOR HET VIERDE BLOKJE */
 /******************************/
